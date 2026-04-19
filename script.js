@@ -1,11 +1,16 @@
-// script.js - Niveau 2
-WA.onInit().then(() => {
-    console.log("Niveau 2 : Système d'accueil activé.");
+// script.js - Version Niveau 2 de secours
+console.log("Tentative de lancement du Niveau 2...");
 
-    // Affiche une bulle de texte au-dessus du joueur
-    WA.ui.displayBubble({
-        label: "Welcome to the EEG101 virtual lab! Follow the arrows to start your journey.",
-        position: "top",
-        duration: 7000 // La bulle reste visible 7 secondes pour être bien lue
-    });
+WA.onInit().then(() => {
+    console.log("API WorkAdventure prête !");
+
+    // On ajoute un petit délai de 1 seconde pour être sûr que Lulu est bien là
+    setTimeout(() => {
+        WA.ui.displayBubble({
+            label: "Welcome! Follow the arrows to discover our Community Framework.",
+            position: "top",
+            duration: 7000
+        });
+        console.log("Bulle envoyée !");
+    }, 1000);
 });
