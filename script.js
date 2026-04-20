@@ -1,14 +1,20 @@
-// script.js - Niveau 2 (Version validée)
+// script.js - Test de Popup (Niveau 3)
 WA.onInit().then(() => {
-    // Ce message confirme que la poignée de main a réussi
-    console.log("WA initialisé. Lancement de la bulle d'accueil...");
+    console.log("WA initialisé. Tentative d'ouverture de Popup...");
 
-    // On affiche la bulle au-dessus de Lulu
-    WA.ui.displayBubble({
-        label: "Salut bg.",
-        position: "top",
-        duration: 15000 // Affichage pendant 5 secondes
-    });
+    // Au lieu d'une bulle, on ouvre une fenêtre au milieu de l'écran
+    WA.ui.openPopup("intro_popup", "Welcome to the EEG101 Virtual Lab! Here you will learn about scientific validity and responsibility.", [
+        {
+            label: "Let's go!",
+            className: "primary",
+            callback: (popup) => {
+                popup.close(); // Ferme le popup quand on clique
+                console.log("L'utilisateur a fermé le popup.");
+            }
+        }
+    ]);
 
-   console.log("La bulle a été lancée !");
+    console.log("Ca a marché ...???");
+
+    
 });
