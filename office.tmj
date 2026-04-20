@@ -461,6 +461,17 @@
                  "width":32,
                  "x":64,
                  "y":544
+                }, 
+                {
+                 "height":70,
+                 "id":20,
+                 "name":"npc_bob",
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":102.666666666667,
+                 "x":244,
+                 "y":362
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -543,7 +554,7 @@
          "y":0
         }],
  "nextlayerid":63,
- "nextobjectid":20,
+ "nextobjectid":21,
  "orientation":"orthogonal",
  "properties":[
         {
