@@ -1,1 +1,1 @@
-WA.chat.sendChatMessage('Hello world', 'Mr Robot');
+WA.chat.sendChatMessage(`Hi ${utilisateur} ! My name is Jean-Michel`, 'Jean-Michel');
